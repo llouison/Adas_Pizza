@@ -19,8 +19,8 @@ The lecture notes are **very thorough**. 🚨 Once again, ***DO NOT COPY AND PAS
 
 ## 🚀 Completion looks like:
 
-- You have a working pizza app with a database.
-- Your pizza app has a controller and a model.
+- You have a working pizza app with a database, a controller, and a model.
+- You can add pizza flavors to the database.
 - You have styled your pizza app.
 - **You have chronicled every error you encountered in your errors.md markdown file,** along with the steps you think you may need to fix it.
 
