@@ -3,6 +3,9 @@ const path = require('path');
 const logger = require('morgan');
 const app = express();
 
+/* importing routes */
+const pizzaRoutes = require('./routes/pizzaRoutes');
+
 /* telling the app what port to listen on */
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, function() {
@@ -14,10 +17,17 @@ app.use('/static', express.static(path.join(__dirname, 'public')));
 /* setting up logging */
 app.use(logger('dev'));
 
+/* setting the view engine */
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
 /* creating the first route */
 app.get('/', function(req, res) {
   res.send('hello world!');
 });
+
+/* creating the pizza route */
+app.use('/pizza', pizzaRoutes);
 
 /* handling errors */
 app.get('*', function(req, res) {

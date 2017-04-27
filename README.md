@@ -9,7 +9,7 @@ The lecture notes are **very thorough**. 🚨 Once again, ***DO NOT COPY AND PAS
 ## 🍕 What's been provided for you:
 
 - A solution for last night's pizza homework, including routes and views 🙌 **NOTE**! If you're super proud of your views, feel free to use those instead of the ones here!!!
-- A pizza database seed file and migration.
+- A pizza database seed file and migration. (Take a look at this!!! Maybe it has some different properties from the original pizza fake database... 🤔)
 
 ## 🍕 Before you start:
 
@@ -23,8 +23,6 @@ The lecture notes are **very thorough**. 🚨 Once again, ***DO NOT COPY AND PAS
 - Your pizza app has a controller and a model.
 - You have styled your pizza app.
 - **You have chronicled every error you encountered in your errors.md markdown file,** along with the steps you think you may need to fix it.
-
-
 
 ## 🚀 Your homework submission should include:
 
