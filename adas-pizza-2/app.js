@@ -1,6 +1,8 @@
+/* dependencies & creating app */
 const express = require('express');
 const path = require('path');
 const logger = require('morgan');
+const bodyParser = require('body-parser');
 const app = express();
 
 /* importing routes */
@@ -16,6 +18,9 @@ app.listen(PORT, function() {
 app.use('/static', express.static(path.join(__dirname, 'public')));
 /* setting up logging */
 app.use(logger('dev'));
+/* setting up body-parser */
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 /* setting the view engine */
 app.set('views', path.join(__dirname, 'views'));

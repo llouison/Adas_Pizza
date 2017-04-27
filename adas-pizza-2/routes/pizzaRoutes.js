@@ -25,7 +25,10 @@ pizzaRoutes.get('/:id', function(req, res) {
 });
 
 pizzaRoutes.post('/', function(req, res) {
-  // originally there was something here that pushed the pizza into the pizza db array...
+  pizzaData.push({
+    flavor: req.body.flavor,
+    location: req.body.location
+  });
   res.redirect('/pizza');
 });
 
