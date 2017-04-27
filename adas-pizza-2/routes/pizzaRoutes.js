@@ -10,12 +10,23 @@ pizzaRoutes.get('/', function(req, res) {
   });
 });
 
+pizzaRoutes.get('/add', function(req, res) {
+  res.render('pizza/pizza-add', {
+    documentTitle: 'Ada\'s Pizza!'
+  });
+});
+
 pizzaRoutes.get('/:id', function(req, res) {
   const id = req.params.id;
   res.render('pizza/pizza-single', {
     documentTitle: 'Ada\'s Pizza!',
     onePizza: pizzaData[id],
   });
+});
+
+pizzaRoutes.post('/', function(req, res) {
+  // originally there was something here that pushed the pizza into the pizza db array...
+  res.redirect('/pizza');
 });
 
 module.exports = pizzaRoutes;
