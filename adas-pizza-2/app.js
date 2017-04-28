@@ -40,5 +40,9 @@ app.use('/pizzas', pizzaRoutes);
 
 /* handling errors */
 app.get('*', function(req, res) {
-  res.status(404).send({message: 'not found!'});
+  res.status(404).render('index', {
+        documentTitle: 'Ada\'s Pizza',
+        message: 'Mama Mia 404!',
+        subTitle: 'Look\'s like what you\'re looking for can\'t be found'
+    });
 });
