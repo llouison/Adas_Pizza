@@ -1,12 +1,12 @@
 <% include ../partials/boilerplate %>
 
-<h2>Ada's Pizza Menu!</h2>
+<h1>Ada's Pizza Menu!</h1>
 
 <div class='pizzalist'>
-  <h3>Check out all these amazing pizzas...</h3>
+  <h2>Check out all these amazing pizzas...</h2>
   <% pizzaData.forEach((pizza, index) => { %>
-    <div class='singlepizza'>
-      <h4><%= pizza.flavor %></h4>
+    <div class='frame'>
+      <h3><%= pizza.flavor %></h3>
       <p>This pizza comes from <%= pizza.location %>.</p>
       <a href='/pizzas/<%= index + 1%>'>Learn more!</a>
     </div>
