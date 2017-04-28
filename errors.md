@@ -1,4 +1,4 @@
- ####The typeerror says Pizza.findAll isn't a function because I forgot to export my Pizza object.
+ ### The typeerror says Pizza.findAll isn't a function because I forgot to export my Pizza object from the models.
 
 ```
 TypeError: Pizza.findAll is not a function
