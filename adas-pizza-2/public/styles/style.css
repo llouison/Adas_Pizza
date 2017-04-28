@@ -11,6 +11,7 @@ body {
   font-size: 18px;
   background: #EA3324 url("../images/gingham.jpg");
   background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
 }
 h1{
@@ -29,8 +30,18 @@ h3{
   color: #EA3324;
   font-weight: bold;
 }
+h4{
+  font-size: 30px;
+  color: #EA3324;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
 p {
   margin: 1em 0;
+}
+a {
+  color: #EA3324;
+  text-align: center;
 }
 .frame{
   background: #fff;
@@ -41,6 +52,7 @@ p {
   justify-content: center;
   padding: 40px;
   margin: 15px auto;
+  box-shadow: 10px 10px 20px -8px rgba(0,0,0,0.75); 
 }
 form {
   display: flex;
@@ -76,5 +88,8 @@ input[type='submit'] {
 @media screen and (max-width: 1000px) {
   body {
     font-size: 12px;
+  }
+  h1 {
+    font-size: 16px;
   }
 }
