@@ -30,8 +30,8 @@ INSERT INTO pizza (flavor, description, flavor_key, location) VALUES
     'Chicago'
   ),
   (
-    'Pineapple',
-    'An abomination, probably.',
+    'Hawaiian',
+    'The best of them all! A mix of sweet and savory, pepperoni and pineapple chunks.',
     'pineapple',
     'Hawaii'
   ),
