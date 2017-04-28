@@ -1,5 +1,11 @@
 <% include ./partials/boilerplate %>
  
- <h1>Welcome to Ada's Pizza Express!</h1>
+<div class="frame">
+    <h1><%= message %></h1> 
+    <h2><%= subTitle %></h2>
+    <a href='/pizzas'>See all pizza</a>
+    <p>or<p>
+    <a href='/pizzas/add'>Add your favorite pizza to the list!</a>
+</div> 
 
 <% include ./partials/end %>
