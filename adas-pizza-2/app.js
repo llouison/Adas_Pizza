@@ -32,7 +32,7 @@ app.get('/', function(req, res) {
 });
 
 /* creating the pizza route */
-app.use('/pizza', pizzaRoutes);
+app.use('/pizzas', pizzaRoutes);
 
 /* handling errors */
 app.get('*', function(req, res) {

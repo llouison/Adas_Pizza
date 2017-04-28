@@ -1,9 +1,10 @@
 <% include ../partials/boilerplate %>
  
-<form method='POST' action='/pizza'>
+<form method='POST' action='/pizzas'>
   <input name='flavor' type='text' placeholder='Flavor' />
+  <textarea name='description'></textarea>
+  <input name='flavor_key' type='text' placeholder='Flavor Key' />
   <input name='location' type='text' placeholder='Location' />
-  <!-- check out the pizza database to see what fields you need here! -->
   <input type='submit' value='submit' />
 </form>
 
