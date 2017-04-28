@@ -28,7 +28,11 @@ app.set('view engine', 'ejs');
 
 /* creating the first route */
 app.get('/', function(req, res) {
-  res.send('hello world!');
+  res.render('index', {
+        documentTitle: 'Ada\'s Pizza',
+        message: 'Welcome to Ada\'s Pizza',
+        subTitle: 'A collection of the best pizza around!'
+    });
 });
 
 /* creating the pizza route */
